@@ -1,0 +1,57 @@
+@inherits LayoutComponentBase
+@inject NavigationManager NavigationManager
+
+<div class="in-app-container column">
+    <div class="group row">
+        <div class="group_2 row">
+            <IgbButton Variant="ButtonVariant.Flat" class="button" in-app-scope>
+                <span class="material-icons">menu</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <img src="https://i.ibb.co/syrwz7h/travel-app.png" @onclick="@(e => Navigate("/"))" class="image" />
+        </div>
+        <div class="group_1 row">
+            <IgbButton Variant="ButtonVariant.Flat" class="button_1" in-app-scope>
+                <span class="material-icons">notifications</span>
+                <IgbRipple></IgbRipple>
+            </IgbButton>
+            <IgbAvatar Src="https://images.unsplash.com/photo-1494790108377-be9c29b29330?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&crop=faces&w=240&h=240&q=80" Shape="AvatarShape.Circle"></IgbAvatar>
+        </div>
+    </div>
+    <IgbNavDrawer Open="false" class="nav-drawer" in-app-scope>
+        <div>
+            <IgbNavDrawerItem Active="false" @onclick="@(e => Navigate("/in-app"))" class="nav-drawer-item" in-app-scope>
+                <span class="material-icons icon">dashboard</span>
+                <span class="span">Dashboard</span>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem Active="false" class="nav-drawer-item" in-app-scope>
+                <span class="material-icons icon">image_search</span>
+                <span class="span">Discover</span>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem Active="false" class="nav-drawer-item" in-app-scope>
+                <span class="material-icons icon">playlist_add_check</span>
+                <span class="span">Travel lists</span>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem Active="false" @onclick="@(e => Navigate("/in-app/articles"))" class="nav-drawer-item" in-app-scope>
+                <span class="material-icons icon">chrome_reader_mode</span>
+                <span class="span">Articles</span>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem Active="false" class="nav-drawer-item" in-app-scope>
+                <span class="material-icons icon">question_answer</span>
+                <span class="span">FAQ</span>
+            </IgbNavDrawerItem>
+            <IgbNavDrawerItem Active="false" class="nav-drawer-item" in-app-scope>
+                <span class="material-icons icon">settings</span>
+                <span class="span">Settings</span>
+            </IgbNavDrawerItem>
+        </div>
+    </IgbNavDrawer>
+    <div class="view-container">@Body</div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

@@ -1,0 +1,105 @@
+.sign-up-container {
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: stretch;
+}
+.left {
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    min-width: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    width: 50%;
+    position: relative;
+}
+.form {
+    margin: 50px;
+    flex-shrink: 0;
+    max-width: 500px;
+    min-height: 50px;
+    min-width: 50px;
+    position: relative;
+    align-items: stretch;
+}
+.h3 {
+    color: hsla(var(--igc-gray-900));
+    height: max-content;
+    margin: 0 0 16px;
+    min-width: min-content;
+}
+.right {
+    background-color: transparent;
+    background-image: url("https://images.unsplash.com/photo-1501854140801-50d01698950b?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2280&q=80");
+    min-width: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    width: 50%;
+    position: relative;
+    align-items: stretch;
+}
+.text {
+    height: max-content;
+    margin: 0 0 16px;
+    min-width: min-content;
+}
+.group {
+    min-height: min-content;
+    min-width: 50px;
+    position: relative;
+    align-items: stretch;
+}
+.group_1 {
+    max-width: 500px;
+    margin: 0 0 32px;
+    align-items: stretch;
+}
+.group_2 {
+    width: 50%;
+}
+.group_3 {
+    min-width: min-content;
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_4 {
+    min-height: 50px;
+    margin: 0 0 32px;
+    min-width: 50px;
+    position: relative;
+    align-items: stretch;
+}
+.group_5 {
+    margin: 0 0 32px;
+}
+.button {
+    margin: 32px 0 0;
+    min-width: min-content;
+    height: max-content;
+}
+.button::part(base) {
+    color: hsla(var(--igc-gray-900));
+}
+.checkbox {
+    width: max-content;
+    height: max-content;
+}
+.button_1 {
+    min-width: min-content;
+    height: max-content;
+}
+.button_1::part(base) {
+    background-color: hsla(var(--igc-secondary-500));
+}
+.input {
+    margin: 0 0 24px;
+    min-width: min-content;
+    height: max-content;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}

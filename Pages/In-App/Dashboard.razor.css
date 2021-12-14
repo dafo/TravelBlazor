@@ -1,0 +1,216 @@
+.group {
+    height: 25%;
+    min-height: min-content;
+    background-image: url("https://images.unsplash.com/photo-1505118380757-91f5f5632de0?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTF8fHN1bW1lcnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=60");
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    justify-content: center;
+    background-color: transparent;
+    position: sticky;
+    z-index: 1;
+    overflow: auto;
+    padding: 24px;
+    min-width: 50px;
+    flex-shrink: 0;
+}
+.group_1 {
+    width: 75%;
+    min-width: 50%;
+    background-color: hsla(var(--igc-gray-200));
+    height: 100%;
+    align-items: center;
+    overflow: auto;
+    min-height: 50px;
+}
+.group_2 {
+    width: 94%;
+    margin: 0 0 16px;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+.text {
+    width: 580px;
+    color: hsla(var(--igc-surface-500));
+    height: max-content;
+    min-width: min-content;
+}
+.group_3 {
+    width: 25%;
+    overflow: hidden;
+    min-width: 50px;
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_4 {
+    min-width: 100%;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_5 {
+    min-width: 80px;
+    flex-grow: 1;
+    flex-basis: 0;
+    width: 100%;
+    background-color: hsla(var(--igc-gray-100));
+    position: sticky;
+    z-index: 1;
+    overflow: auto;
+    padding: 24px;
+    align-items: stretch;
+}
+.h4 {
+    margin: 0 0 8px;
+    color: hsla(var(--igc-surface-500));
+    height: max-content;
+    min-width: min-content;
+}
+.group_6 {
+    margin: -32px 0 24px;
+    height: min-content;
+    width: 96%;
+    background-color: hsla(var(--igc-surface-500));
+    position: sticky;
+    z-index: 1;
+    padding: 24px;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+.group_7 {
+    margin: 0 0 24px;
+    height: min-content;
+    width: 96%;
+    background-color: hsla(var(--igc-surface-500));
+    position: sticky;
+    z-index: 1;
+    padding: 24px;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+.group_8 {
+    width: 50%;
+    margin: 0 4px 0 0;
+    background-color: transparent;
+    align-items: stretch;
+}
+.image {
+    min-width: 0;
+    min-height: 0;
+    margin: 0 0 4px;
+    object-fit: cover;
+}
+.actions-content {
+    min-height: 40px;
+    min-width: 50px;
+}
+.group_9 {
+    overflow: hidden;
+    align-items: center;
+    padding: 24px;
+    justify-content: space-between;
+    flex-shrink: 0;
+}
+.group_10 {
+    padding: 16px;
+    margin: 0 0 0 8px;
+    background-color: hsla(var(--igc-gray-100));
+    justify-content: center;
+    height: 100%;
+    position: relative;
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_11 {
+    height: min-content;
+    width: 96%;
+    background-color: hsla(var(--igc-surface-500));
+    position: sticky;
+    z-index: 1;
+    padding: 24px;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+.dashboard-container {
+    justify-content: center;
+    height: 100%;
+    align-items: center;
+}
+.group_12 {
+    background-color: transparent;
+    margin: 0 0 16px;
+    justify-content: space-between;
+    min-width: 50px;
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_13 {
+    margin: 0 0 16px;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+}
+.h6 {
+    height: max-content;
+    min-width: min-content;
+    flex-shrink: 0;
+}
+.group_14 {
+    overflow: auto;
+    justify-content: space-between;
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_15 {
+    position: relative;
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+    align-items: stretch;
+}
+.group_16 {
+    flex-shrink: 0;
+}
+.button {
+    flex-shrink: 0;
+    height: max-content;
+    min-width: min-content;
+}
+.button::part(base) {
+    color: hsla(var(--igc-gray-900));
+}
+.button_1 {
+    height: max-content;
+    min-width: min-content;
+}
+.button_1::part(base) {
+    color: hsla(var(--igc-gray-900));
+}
+.card {
+    margin: 0 8px 0 0;
+    width: 240px;
+    height: max-content;
+    flex-shrink: 0;
+}
+.grid {
+    min-width: 50px;
+    min-height: 50px;
+    flex-shrink: 0;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}

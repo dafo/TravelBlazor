@@ -1,0 +1,41 @@
+@page "/sign-up"
+@inject NavigationManager NavigationManager
+
+<div class="sign-up-container row">
+    <div class="left column">
+        <div class="form column">
+            <div class="group_1 column">
+                <div class="group_4 column">
+                    <h3 class="h3">Sign up</h3>
+                    <p class="typography__body-2 text">Don't have an account? Sign up now for free and enjoy thousands of great travel opportunities</p>
+                </div>
+                <IgbInput DisplayType="InputType.Text" Label="Email" Placeholder="myname@website.com" Outlined="true" class="input" sign-up-scope></IgbInput>
+                <IgbInput DisplayType="InputType.Text" Label="Password" Placeholder="Min 8 characters" Outlined="true" class="input" sign-up-scope></IgbInput>
+                <IgbInput DisplayType="InputType.Text" Label="Repeat Password" Placeholder="Min 8 characters" Outlined="true" class="input" sign-up-scope></IgbInput>
+                <div class="group group_5 row">
+                    <div class="group group_2 row">
+                        <IgbCheckbox Checked="true" Indeterminate="false" class="checkbox" sign-up-scope>Remember me</IgbCheckbox>
+                    </div>
+                </div>
+                <IgbButton Variant="ButtonVariant.Contained" @onclick="@(e => Navigate("/in-app"))" class="button_1" sign-up-scope>
+                    sign up
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+            <div class="group_3 column">
+                <IgbButton Variant="ButtonVariant.Outlined" @onclick="@(e => Navigate("/"))" class="button" sign-up-scope>
+                    Already have a registration?
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+        </div>
+    </div>
+    <div class="right column"></div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

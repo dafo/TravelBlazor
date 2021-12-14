@@ -1,0 +1,39 @@
+@page "/"
+@inject NavigationManager NavigationManager
+
+<div class="login-container row">
+    <div class="left column">
+        <div class="form column">
+            <div class="group_1 column">
+                <div class="group_2 group_3 column">
+                    <h3 class="h3">Login</h3>
+                    <p class="typography__body-2 text">Please, login so you can access all applications features.</p>
+                </div>
+                <IgbInput DisplayType="InputType.Text" Label="Email" Placeholder="myname@website.com" Outlined="true" class="input" login-scope></IgbInput>
+                <IgbInput DisplayType="InputType.Text" Label="Password" Placeholder="Min 8 characters" Outlined="true" class="input" login-scope></IgbInput>
+                <div class="group row">
+                    <IgbCheckbox Checked="true" Indeterminate="false" class="checkbox" login-scope>Remember me</IgbCheckbox>
+                    <a @onclick="@(e => Navigate("/reset-password"))" class="typography__body-2 hyperlink">Forgot password?</a>
+                </div>
+                <IgbButton Variant="ButtonVariant.Contained" @onclick="@(e => Navigate("/in-app"))" class="button_1" login-scope>
+                    log in
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+            <div class="group_2 group_4 column">
+                <IgbButton Variant="ButtonVariant.Outlined" @onclick="@(e => Navigate("/sign-up"))" class="button" login-scope>
+                    Don't have a registration? Sign up now!
+                    <IgbRipple></IgbRipple>
+                </IgbButton>
+            </div>
+        </div>
+    </div>
+    <div class="right column"></div>
+</div>
+
+@code {
+    private void Navigate(string path)
+    {
+        NavigationManager.NavigateTo(path);
+    }
+}

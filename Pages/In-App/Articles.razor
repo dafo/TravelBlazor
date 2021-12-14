@@ -1,0 +1,177 @@
+@page "/in-app/articles"
+@inject NavigationManager NavigationManager
+@inject HttpClient HttpClient
+
+<div class="articles-container row">
+    <div class="group_2 row">
+        <div class="group_1 row">
+            <div class="group column">
+                <h6 class="h6">All articles</h6>
+                <div class="group_5 row">
+                    <div class="group_7 column">
+                        @foreach (var item in travelAppDataArticlesSource1)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia>
+                                    <img src="@item.Image_url" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">@item.Title</h3>
+                                    <h5 slot="subtitle">@item.Subtitle</h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">bookmark_border</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">share</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                    <div class="group_7 column">
+                        @foreach (var item in travelAppDataArticlesSource2)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia>
+                                    <img src="@item.Image_url" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">@item.Title</h3>
+                                    <h5 slot="subtitle">@item.Subtitle</h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">bookmark_border</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">share</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                    <div class="group_7 column">
+                        @foreach (var item in travelAppDataArticlesSource3)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia>
+                                    <img src="@item.Image_url" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">@item.Title</h3>
+                                    <h5 slot="subtitle">@item.Subtitle</h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">bookmark_border</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">share</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                    <div class="group_3 column">
+                        @foreach (var item in travelAppDataArticlesSource4)
+                        {
+                            <IgbCard Outlined="true" class="card" articles-scope>
+                                <IgbCardMedia>
+                                    <img src="@item.Image_url" />
+                                </IgbCardMedia>
+                                <IgbCardHeader>
+                                    <h3 slot="title">@item.Title</h3>
+                                    <h5 slot="subtitle">@item.Subtitle</h5>
+                                </IgbCardHeader>
+                                <IgbCardActions class="actions-content" articles-scope>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">bookmark_border</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat">
+                                        <span class="material-icons">share</span>
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                    <IgbButton Variant="ButtonVariant.Flat" class="button" articles-scope>
+                                        Read
+                                        <IgbRipple></IgbRipple>
+                                    </IgbButton>
+                                </IgbCardActions>
+                            </IgbCard>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="group_8 column">
+            <div class="group_4 column">
+                <h6 class="h6">Recommended</h6>
+                <div class="group_6 column">
+                    @foreach (var item in travelAppDataSelectedArticles)
+                    {
+                        <IgbCard Outlined="true" class="card" articles-scope>
+                            <IgbCardMedia>
+                                <img src="@item.Image_url" />
+                            </IgbCardMedia>
+                            <IgbCardHeader>
+                                <h3 slot="title">@item.Title</h3>
+                                <h5 slot="subtitle">@item.Subtitle</h5>
+                            </IgbCardHeader>
+                            <IgbCardActions class="actions-content" articles-scope>
+                                <IgbButton Variant="ButtonVariant.Flat">
+                                    <span class="material-icons">bookmark_border</span>
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                                <IgbButton Variant="ButtonVariant.Flat">
+                                    <span class="material-icons">share</span>
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                                <IgbButton Variant="ButtonVariant.Flat" class="button" articles-scope>
+                                    Read
+                                    <IgbRipple></IgbRipple>
+                                </IgbButton>
+                            </IgbCardActions>
+                        </IgbCard>
+                    }
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+@code {
+    private TravelAppData.ArticlesSource1Type[] travelAppDataArticlesSource1 = Array.Empty<TravelAppData.ArticlesSource1Type>();
+    private TravelAppData.ArticlesSource2Type[] travelAppDataArticlesSource2 = Array.Empty<TravelAppData.ArticlesSource2Type>();
+    private TravelAppData.ArticlesSource3Type[] travelAppDataArticlesSource3 = Array.Empty<TravelAppData.ArticlesSource3Type>();
+    private TravelAppData.ArticlesSource4Type[] travelAppDataArticlesSource4 = Array.Empty<TravelAppData.ArticlesSource4Type>();
+    private TravelAppData.SelectedArticlesType[] travelAppDataSelectedArticles = Array.Empty<TravelAppData.SelectedArticlesType>();
+
+    protected override async Task OnInitializedAsync()
+    {
+        travelAppDataArticlesSource1 = await HttpClient.GetFromJsonAsync<TravelAppData.ArticlesSource1Type[]>("static-data/travel-app-data-articles-source-1.json") ?? travelAppDataArticlesSource1;
+        travelAppDataArticlesSource2 = await HttpClient.GetFromJsonAsync<TravelAppData.ArticlesSource2Type[]>("static-data/travel-app-data-articles-source-2.json") ?? travelAppDataArticlesSource2;
+        travelAppDataArticlesSource3 = await HttpClient.GetFromJsonAsync<TravelAppData.ArticlesSource3Type[]>("static-data/travel-app-data-articles-source-3.json") ?? travelAppDataArticlesSource3;
+        travelAppDataArticlesSource4 = await HttpClient.GetFromJsonAsync<TravelAppData.ArticlesSource4Type[]>("static-data/travel-app-data-articles-source-4.json") ?? travelAppDataArticlesSource4;
+        travelAppDataSelectedArticles = await HttpClient.GetFromJsonAsync<TravelAppData.SelectedArticlesType[]>("static-data/travel-app-data-selected-articles.json") ?? travelAppDataSelectedArticles;
+    }
+}

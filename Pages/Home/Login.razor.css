@@ -1,0 +1,110 @@
+.left {
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    position: relative;
+}
+.group {
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: min-content;
+    margin: 0 0 32px;
+    min-width: 50px;
+    position: relative;
+}
+.form {
+    margin: 60px;
+    max-width: 500px;
+    flex-shrink: 0;
+    min-height: 50px;
+    min-width: 50px;
+    position: relative;
+    align-items: stretch;
+}
+.h3 {
+    color: hsla(var(--igc-gray-900));
+    margin: 0 0 16px;
+    height: max-content;
+    min-width: min-content;
+}
+.hyperlink {
+    color: hsla(var(--igc-secondary-900));
+    flex-shrink: 0;
+    height: max-content;
+    min-width: min-content;
+}
+.right {
+    background-color: transparent;
+    background-image: url("https://images.unsplash.com/photo-1505765050516-f72dcac9c60e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80");
+    width: 50%;
+    min-width: 50%;
+    min-height: 100%;
+    max-height: 100%;
+    position: relative;
+    align-items: stretch;
+}
+.login-container {
+    flex-wrap: wrap;
+    height: 100%;
+    align-items: stretch;
+}
+.group_1 {
+    min-height: min-content;
+    margin: 0 0 32px;
+    min-width: 50px;
+    align-items: stretch;
+}
+.text {
+    margin: 0 0 16px;
+    height: max-content;
+    min-width: min-content;
+}
+.group_2 {
+    min-height: 50px;
+    align-items: stretch;
+}
+.group_3 {
+    margin: 0 0 32px;
+    min-width: 50px;
+    position: relative;
+}
+.group_4 {
+    min-width: min-content;
+}
+.checkbox {
+    margin: 0 2px 0 0;
+    width: max-content;
+    height: max-content;
+}
+.button {
+    margin: 32px 0 0;
+    min-width: min-content;
+    height: max-content;
+}
+.button::part(base) {
+    color: hsla(var(--igc-gray-900));
+}
+.button_1 {
+    min-width: min-content;
+    height: max-content;
+}
+.button_1::part(base) {
+    background-color: hsla(var(--igc-secondary-500));
+}
+.input {
+    margin: 0 0 24px;
+    min-width: min-content;
+    height: max-content;
+}
+.row {
+    display: flex;
+}
+.column {
+    display: flex;
+    flex-direction: column;
+}
